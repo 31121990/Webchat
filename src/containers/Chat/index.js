@@ -21,7 +21,8 @@ import './style.scss'
 
 const MAX_GET_MEMORY_TIME = 10 * 1000 // in ms
 const FAILED_TO_GET_MEMORY = 'Could not get memory from webchatMethods.getMemory :'
-const WRONG_MEMORY_FORMAT = 'Wrong memory format, expecting : { "memory": <json>, "merge": <boolean> }'
+const WRONG_MEMORY_FORMAT =
+  'Wrong memory format, expecting : { "memory": <json>, "merge": <boolean> }'
 
 @connect(
   state => ({
@@ -37,7 +38,6 @@ const WRONG_MEMORY_FORMAT = 'Wrong memory format, expecting : { "memory": <json>
     pollMessages,
     removeMessage,
     addUserMessage,
-    
     addBotMessage,
   },
 )
@@ -134,10 +134,15 @@ class Chat extends Component {
     })
   }
 
-  shouldHideBotReply = (responseData) => {
-    return responseData.conversation && responseData.conversation.skill === 'qna'
-    && Array.isArray(responseData.nlp) && !responseData.nlp.length
-    && Array.isArray(responseData.messages) && !responseData.messages.length;
+  shouldHideBotReply = responseData => {
+    return (
+      responseData.conversation &&
+      responseData.conversation.skill === 'qna' &&
+      Array.isArray(responseData.nlp) &&
+      !responseData.nlp.length &&
+      Array.isArray(responseData.messages) &&
+      !responseData.messages.length
+    )
   }
 
   sendMessage = (attachment, userMessage) => {
@@ -162,13 +167,16 @@ class Chat extends Component {
     }
 
     if (userMessage)
-      userMessage = {...JSON.parse(JSON.stringify(backendMessage)), attachment: { type: 'text', content: userMessage}};
+      userMessage = {
+        ...JSON.parse(JSON.stringify(backendMessage)),
+        attachment: { type: 'text', content: userMessage },
+      }
 
     this.setState(
       prevState => ({ messages: _concat(prevState.messages, [backendMessage]) }),
       () => {
         if (sendMessagePromise) {
-          addUserMessage(userMessage || backendMessage);
+          addUserMessage(userMessage || backendMessage)
 
           sendMessagePromise(backendMessage)
             .then(res => {
@@ -188,7 +196,7 @@ class Chat extends Component {
         } else {
           // get potential memoryOptions from website developer
           this.getMemoryOptions(chatId)
-            .then((memoryOptions) => {
+            .then(memoryOptions => {
               if (memoryOptions) {
                 payload.memoryOptions = memoryOptions
               }
@@ -324,7 +332,7 @@ class Chat extends Component {
                     'RecastAppChat--slogan--hidden': !showSlogan,
                   })}
                 >
-                  {'We run with Recast.AI ---- Vadi'}
+                  {'We run with Recast.AI -- vadi'}
                 </div>,
               ]}
         </div>
