@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "cdf6546fa9feb4b0e39b"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "06a8522cd1df013f1612"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -45989,7 +45989,9 @@ var Chat = (_dec = (0, _reactRedux.connect)(function (state) {
         }
       });
 
-      if (userMessage) userMessage = _extends({}, JSON.parse(JSON.stringify(backendMessage)), { attachment: { type: 'text', content: userMessage } });
+      if (userMessage) userMessage = _extends({}, JSON.parse(JSON.stringify(backendMessage)), {
+        attachment: { type: 'text', content: userMessage }
+      });
 
       _this.setState(function (prevState) {
         return { messages: (0, _concat3.default)(prevState.messages, [backendMessage]) };
@@ -46253,7 +46255,7 @@ var Chat = (_dec = (0, _reactRedux.connect)(function (state) {
                 'RecastAppChat--slogan--hidden': !showSlogan
               })
             },
-            'We run with Recast.AI'
+            'We run with Recast.AI -- vadi'
           )]
         ),
         _react2.default.createElement(_Input2.default, {
@@ -56583,11 +56585,7 @@ var Input = function (_Component) {
           },
           rows: 1
         }),
-        _react2.default.createElement(_SendButton2.default, {
-          preferences: preferences,
-          sendMessage: this.sendMessage,
-          value: value
-        }),
+        _react2.default.createElement(_SendButton2.default, { preferences: preferences, sendMessage: this.sendMessage, value: value }),
         showLimitCharacter && _react2.default.createElement(
           'div',
           { className: 'characterLimit' },
@@ -56620,7 +56618,7 @@ exports.default = Input;
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 
 var _react = __webpack_require__(4);
@@ -56636,40 +56634,34 @@ __webpack_require__(883);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var SendButton = function SendButton(_ref) {
-    var sendMessage = _ref.sendMessage,
-        preferences = _ref.preferences,
-        value = _ref.value;
-    return _react2.default.createElement(
-        'div',
+  var sendMessage = _ref.sendMessage,
+      preferences = _ref.preferences,
+      value = _ref.value;
+  return _react2.default.createElement(
+    'div',
+    { className: 'RecastSendButtonContainer' },
+    _react2.default.createElement(
+      'div',
+      { className: 'RecastSendButton', onClick: sendMessage, disabled: !value },
+      _react2.default.createElement(
+        'svg',
         {
-            className: 'RecastSendButtonContainer'
+          style: {
+            width: 23,
+            fill: value ? preferences.accentColor : preferences.botMessageColor
+          },
+          viewBox: '0 0 512 512'
         },
-        _react2.default.createElement(
-            'div',
-            {
-                className: 'RecastSendButton',
-                onClick: sendMessage,
-                disabled: !value
-            },
-            _react2.default.createElement(
-                'svg',
-                {
-                    style: {
-                        width: 23,
-                        fill: value ? preferences.accentColor : preferences.botMessageColor
-                    },
-                    viewBox: '0 0 512 512'
-                },
-                _react2.default.createElement('path', { d: 'M85 277.375h259.704L225.002 397.077 256 427l171-171L256 85l-29.922 29.924 118.626 119.701H85v42.75z' })
-            )
-        )
-    );
+        _react2.default.createElement('path', { d: 'M85 277.375h259.704L225.002 397.077 256 427l171-171L256 85l-29.922 29.924 118.626 119.701H85v42.75z' })
+      )
+    )
+  );
 };
 
 SendButton.propTypes = {
-    preferences: _propTypes2.default.object,
-    sendMessage: _propTypes2.default.func,
-    value: _propTypes2.default.string
+  preferences: _propTypes2.default.object,
+  sendMessage: _propTypes2.default.func,
+  value: _propTypes2.default.string
 };
 
 exports.default = SendButton;
