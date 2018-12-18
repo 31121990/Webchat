@@ -37,6 +37,7 @@ const WRONG_MEMORY_FORMAT = 'Wrong memory format, expecting : { "memory": <json>
     pollMessages,
     removeMessage,
     addUserMessage,
+    
     addBotMessage,
   },
 )
@@ -323,7 +324,7 @@ class Chat extends Component {
                     'RecastAppChat--slogan--hidden': !showSlogan,
                   })}
                 >
-                  {'We run with Recast.AI'}
+                  {'We run with Recast.AI ---- Vadi'}
                 </div>,
               ]}
         </div>
