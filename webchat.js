@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "3af5b86b6c1cec10283f"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "6fea2cf3b03a268c87c7"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -10357,7 +10357,7 @@ exports = module.exports = __webpack_require__(21)(false);
 
 
 // module
-exports.push([module.i, ".RecastApp .RecastAppInput .RecastSendButtonContainer {\n  cursor: pointer;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex; }\n", ""]);
+exports.push([module.i, "/*.RecastApp .RecastAppInput {\n  .RecastSendButtonContainer {\n    cursor: pointer;\n    display: flex;\n  }\n}*/\n", ""]);
 
 // exports
 
@@ -56585,7 +56585,7 @@ var Input = function (_Component) {
           },
           rows: 1
         }),
-        '/*',
+        '/*Vadi',
         _react2.default.createElement(_SendButton2.default, { preferences: preferences, sendMessage: this.sendMessage, value: value }),
         '*/',
         showLimitCharacter && _react2.default.createElement(
@@ -56644,12 +56644,12 @@ var SendButton = function SendButton(_ref) {
     { className: 'RecastSendButtonContainer' },
     _react2.default.createElement(
       'div',
-      { className: 'RecastSendButton', onClick: sendMessage, disabled: !value },
+      { onClick: sendMessage, disabled: !value },
       _react2.default.createElement(
         'svg',
         {
           style: {
-            width: 23,
+            width: 33,
             fill: value ? preferences.accentColor : preferences.botMessageColor
           },
           viewBox: '0 0 512 512'
@@ -56882,7 +56882,7 @@ var arrowLeft = function arrowLeft(_ref) {
   return _react2.default.createElement(
     "svg",
     { width: 16, height: 16, viewBox: "0 0 512 512", className: className },
-    _react2.default.createElement("path", { d: "M320 128L192 256l128 128z", fill: "grey" })
+    _react2.default.createElement("path", { d: "M320 128L192 256l128 128z", fill: "red" })
   );
 };
 
@@ -56917,7 +56917,7 @@ var arrowRight = function arrowRight(_ref) {
       className: className,
       style: { marginRight: 3 }
     },
-    _react2.default.createElement("path", { d: "M192 128l128 128-128 128z", fill: "cornflowerblue" })
+    _react2.default.createElement("path", { d: "M192 128l128 128-128 128z", fill: "yellow" })
   );
 };
 
