@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import * as R from 'ramda'
 
-import SendButton from 'components/SendButton'
+
 
 import Menu from 'components/Menu'
 import MenuSVG from 'components/svgs/menu'
