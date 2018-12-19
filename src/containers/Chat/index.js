@@ -332,7 +332,7 @@ class Chat extends Component {
                     'RecastAppChat--slogan--hidden': !showSlogan,
                   })}
                 >
-                  {'We run with Recast.AI -- vadi'}
+                  {'We run with Recast.AI -- vadi @ Varsha'}
                 </div>,
               ]}
         </div>
