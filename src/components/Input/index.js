@@ -217,7 +217,7 @@ class Input extends Component {
           }}
           rows={1}
         />
-        <SendButton preferences={preferences} sendMessage={this.sendMessage} value={value} />
+        /*Vadi <SendButton preferences={preferences} sendMessage={this.sendMessage} value={value} />*/
 		
         <SendButton preferences={preferences} sendMessage={this.sendMessage} value={value} />
 
