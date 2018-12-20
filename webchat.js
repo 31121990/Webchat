@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "171db2cc50f33ae81d7e"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "9a67bfa87ba376365b2d"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -46241,7 +46241,7 @@ var Chat = (_dec = (0, _reactRedux.connect)(function (state) {
                 'RecastAppChat--slogan--hidden': !showSlogan
               })
             },
-            'We run with Recast.AI -- vadi'
+            'We run with Recast.AI -- vadi @ Varsha'
           )]
         ),
         _react2.default.createElement(_Input2.default, {
@@ -56571,9 +56571,7 @@ var Input = function (_Component) {
           },
           rows: 1
         }),
-        '/*Click',
         _react2.default.createElement(_SendButton2.default, { preferences: preferences, sendMessage: this.sendMessage, value: value }),
-        '*/',
         showLimitCharacter && _react2.default.createElement(
           'div',
           { className: 'characterLimit' },
