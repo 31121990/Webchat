@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "964ab0ce53f234c642ba"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "54cdccaecb12f7131601"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -56337,6 +56337,10 @@ var _ramda = __webpack_require__(134);
 
 var R = _interopRequireWildcard(_ramda);
 
+var _MicButton = __webpack_require__(897);
+
+var _MicButton2 = _interopRequireDefault(_MicButton);
+
 var _SendButton = __webpack_require__(882);
 
 var _SendButton2 = _interopRequireDefault(_SendButton);
@@ -56585,9 +56589,7 @@ var Input = function (_Component) {
           },
           rows: 1
         }),
-        '/*Vadi ',
-        _react2.default.createElement(_SendButton2.default, { preferences: preferences, sendMessage: this.sendMessage, value: value }),
-        '*/',
+        _react2.default.createElement(_MicButton2.default, { preferences: preferences, sendMessage: this.sendMessage, value: value }),
         _react2.default.createElement(_SendButton2.default, { preferences: preferences, sendMessage: this.sendMessage, value: value }),
         showLimitCharacter && _react2.default.createElement(
           'div',
@@ -56656,7 +56658,7 @@ var SendButton = function SendButton(_ref) {
                 'svg',
                 {
                     style: {
-                        width: 43,
+                        width: 23,
                         fill: value ? preferences.accentColor : preferences.botMessageColor
                     },
                     viewBox: '0 0 512 512'
@@ -57241,6 +57243,113 @@ if(true) {
 	if(!content.locals) {
 		module.hot.accept(180, function() {
 			var newContent = __webpack_require__(180);
+			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 896 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(21)(false);
+// imports
+
+
+// module
+exports.push([module.i, ".RecastApp .RecastAppInput .RecastSendButtonContainer {\n  cursor: pointer;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex; }\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 897 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(8);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+__webpack_require__(898);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var SendButton = function SendButton(_ref) {
+    var sendMessage = _ref.sendMessage,
+        preferences = _ref.preferences,
+        value = _ref.value;
+    return _react2.default.createElement(
+        'div',
+        {
+            className: 'RecastSendButtonContainer'
+        },
+        _react2.default.createElement(
+            'div',
+            {
+                className: 'RecastSendButton',
+                onClick: sendMessage,
+                disabled: !value
+            },
+            _react2.default.createElement(
+                'svg',
+                {
+                    style: {
+                        width: 43,
+                        fill: value ? preferences.accentColor : preferences.botMessageColor
+                    },
+                    viewBox: '0 0 512 512'
+                },
+                _react2.default.createElement('path', { d: 'M85 277.375h259.704L225.002 397.077 256 427l171-171L256 85l-29.922 29.924 118.626 119.701H85v42.75z' })
+            )
+        )
+    );
+};
+
+SendButton.propTypes = {
+    preferences: _propTypes2.default.object,
+    sendMessage: _propTypes2.default.func,
+    value: _propTypes2.default.string
+};
+
+exports.default = SendButton;
+
+/***/ }),
+/* 898 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(896);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {"hmr":true}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(22)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(true) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept(896, function() {
+			var newContent = __webpack_require__(896);
 			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 			update(newContent);
 		});
