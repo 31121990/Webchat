@@ -4,3 +4,38 @@
     display: flex;
   }
 }*/
+
+[name="play-button"] {
+  max-width: 30%;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.circle-wrap {
+  background: black;
+  overflow: hidden;
+  position: relative;
+  &--first {
+    height: 300px;
+    width: 300px;
+    .play-button-circle {
+      fill: red;
+    }
+  }
+  &--second {
+    height: 150px;
+    width: 150px;
+    .play-button-circle {
+      fill: blue;
+    }
+  }
+  &--third {
+    height: 100px;
+    width: 100px;
+    .play-button-circle {
+      fill: green;
+    }
+  }
+}
+
