@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "fcae1fe06f67141a5a0e"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "edb7356d1ab5555c7d11"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -56618,7 +56618,7 @@ exports.default = Input;
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 
 var _react = __webpack_require__(4);
@@ -56634,34 +56634,40 @@ __webpack_require__(883);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var SendButton = function SendButton(_ref) {
-  var sendMessage = _ref.sendMessage,
-      preferences = _ref.preferences,
-      value = _ref.value;
-  return _react2.default.createElement(
-    'div',
-    { className: 'RecastSendButtonContainer' },
-    _react2.default.createElement(
-      'div',
-      { className: 'RecastSendButton', onClick: sendMessage, disabled: !value },
-      _react2.default.createElement(
-        'svg',
+    var sendMessage = _ref.sendMessage,
+        preferences = _ref.preferences,
+        value = _ref.value;
+    return _react2.default.createElement(
+        'div',
         {
-          style: {
-            width: 23,
-            fill: value ? preferences.accentColor : preferences.botMessageColor
-          },
-          viewBox: '0 0 512 512'
+            className: 'RecastSendButtonContainer'
         },
-        _react2.default.createElement('path', { d: 'M85 277.375h259.704L225.002 397.077 256 427l171-171L256 85l-29.922 29.924 118.626 119.701H85v42.75z' })
-      )
-    )
-  );
+        _react2.default.createElement(
+            'div',
+            {
+                className: 'RecastSendButton',
+                onClick: sendMessage,
+                disabled: !value
+            },
+            _react2.default.createElement(
+                'svg',
+                {
+                    style: {
+                        width: 23,
+                        fill: value ? preferences.accentColor : preferences.botMessageColor
+                    },
+                    viewBox: '0 0 512 512'
+                },
+                _react2.default.createElement('path', { d: 'M85 277.375h259.704L225.002 397.077 256 427l171-171L256 85l-29.922 29.924 118.626 119.701H85v42.75z' })
+            )
+        )
+    );
 };
 
 SendButton.propTypes = {
-  preferences: _propTypes2.default.object,
-  sendMessage: _propTypes2.default.func,
-  value: _propTypes2.default.string
+    preferences: _propTypes2.default.object,
+    sendMessage: _propTypes2.default.func,
+    value: _propTypes2.default.string
 };
 
 exports.default = SendButton;
