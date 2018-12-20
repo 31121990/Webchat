@@ -14,7 +14,7 @@ const SendButton = ({sendMessage, preferences, value}) => (
         >
             <svg
                 style={{
-                    width: 23,
+                    width: 43,
                     fill: value ? preferences.accentColor : preferences.botMessageColor,
                 }}
                 viewBox="0 0 512 512"
@@ -23,7 +23,7 @@ const SendButton = ({sendMessage, preferences, value}) => (
             </svg>
 			
         </div>
-		<Text text="vadi"/>
+		
     </div>
 )
 
