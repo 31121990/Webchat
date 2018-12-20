@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import * as R from 'ramda'
 
-
+import SendButton from 'components/SendButton'
 
 import Menu from 'components/Menu'
 import MenuSVG from 'components/svgs/menu'
@@ -218,7 +218,7 @@ class Input extends Component {
           rows={1}
         />
 
-        /*<SendButton preferences={preferences} sendMessage={this.sendMessage} value={value} />*/
+        <SendButton preferences={preferences} sendMessage={this.sendMessage} value={value} />
 
         {showLimitCharacter && (
           <div className="characterLimit">{characterLimit - value.length}</div>
