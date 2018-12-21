@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "6d04b9cf81350e9c8682"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "4cd4f8e6be2f2981a275"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -57252,106 +57252,11 @@ if(true) {
 }
 
 /***/ }),
-/* 896 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(21)(false);
-// imports
-
-
-// module
-exports.push([module.i, ".RecastApp .RecastAppInput .RecastSendButtonContainer {\n  cursor: pointer;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex; }\n", ""]);
-
-// exports
-
-
-/***/ }),
+/* 896 */,
 /* 897 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = __webpack_require__(8);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-__webpack_require__(898);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var SendButton = function SendButton(_ref) {
-    var sendMessage = _ref.sendMessage,
-        preferences = _ref.preferences,
-        value = _ref.value;
-    return _react2.default.createElement(
-        'div',
-        {
-            className: 'RecastSendButtonContainer'
-        },
-        _react2.default.createElement(
-            'div',
-            {
-                className: 'RecastSendButton',
-                onClick: sendMessage,
-                disabled: !value
-            },
-            _react2.default.createElement('svg', {
-                style: {
-                    width: 43
-                },
-                viewBox: '0 0 512 512'
-            })
-        )
-    );
-};
-
-SendButton.propTypes = {
-    preferences: _propTypes2.default.object,
-    sendMessage: _propTypes2.default.func,
-    value: _propTypes2.default.string
-};
-
-exports.default = SendButton;
-
-/***/ }),
-/* 898 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(896);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
-
-var options = {"hmr":true}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__(22)(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(true) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept(896, function() {
-			var newContent = __webpack_require__(896);
-			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
+throw new Error("Module build failed: SyntaxError: C:/Users/v.c.janarthanan/Desktop/Rushi/Webchat-master/Webchat-master/src/components/MicButton/index.js: Unexpected token, expected } (15:15)\n\n\u001b[0m \u001b[90m 13 | \u001b[39m\n \u001b[90m 14 | \u001b[39m\u001b[33mSendButton\u001b[39m\u001b[33m.\u001b[39mpropTypes \u001b[33m=\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 15 | \u001b[39m    preferences\u001b[33m:\u001b[39m \u001b[33mPropTypes\u001b[39m\u001b[33m.\u001b[39mobject\u001b[33m,\u001b[39m\n \u001b[90m    | \u001b[39m               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 16 | \u001b[39m    sendMessage\u001b[33m:\u001b[39m \u001b[33mPropTypes\u001b[39m\u001b[33m.\u001b[39mfunc\u001b[33m,\u001b[39m\n \u001b[90m 17 | \u001b[39m    value\u001b[33m:\u001b[39m \u001b[33mPropTypes\u001b[39m\u001b[33m.\u001b[39mstring\n \u001b[90m 18 | \u001b[39m}\u001b[0m\n");
 
 /***/ })
 /******/ ]);
