@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "cd6012faadd4dafc7032"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "b62909b4b4541c3f4111"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -56589,7 +56589,7 @@ var Input = function (_Component) {
           },
           rows: 1
         }),
-        _react2.default.createElement(_MicButton2.default, { preferences: preferences, sendMessage: this.sendMessage, value: value }),
+        _react2.default.createElement(_MicButton2.default, { preferences: preferences, sendMessage: this.sendMessage, value: 'Mic' }),
         _react2.default.createElement(_SendButton2.default, { preferences: preferences, sendMessage: this.sendMessage, value: value }),
         showLimitCharacter && _react2.default.createElement(
           'div',
@@ -57304,17 +57304,7 @@ var MicButton = function MicButton(_ref) {
                 onClick: sendMessage,
                 disabled: !value
             },
-            _react2.default.createElement(
-                'svg',
-                {
-                    style: {
-                        width: 43,
-                        fill: value
-                    },
-                    viewBox: '0 0 512 512'
-                },
-                _react2.default.createElement('path', { d: 'M85 277.375h259.704L225.002 397.077 256 427l171-171L256 85l-29.922 29.924 118.626 119.701H85v42.75z' })
-            )
+            _react2.default.createElement(Text, { text: 'MicBtn' })
         )
     );
 };
