@@ -12,10 +12,10 @@ const MicButton = ({micMessage, preferences, value}) => (
             onClick={micMessage}
             disabled={!value}
         >
-		<img src="../robot_icon.PNG"></img>
+		<img src="./svgs/robot_icon.PNG"></img>
            <svg height="30" width="200">
 		   
-  <text x="0" y="15" fill="red">Micbtn</text>
+  <text x="0" y="15" fill="red">Micbtn1</text>
 </svg>
 			
         </div>
