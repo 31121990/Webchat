@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "01044094813c55e9b291"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "5a4651bd1d5d4c3f4a2f"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -56668,14 +56668,14 @@ var MicButton = function MicButton(_ref) {
                 onClick: micMessage,
                 disabled: !value
             },
-            _react2.default.createElement('img', { width: '100', height: '20', src: 'robot_icon.png' }),
+            _react2.default.createElement('img', { width: '100', height: '20', src: '/Rushi/Webchat-master/Webchat-master/src/components/MicButton/robot_icon.png' }),
             _react2.default.createElement(
                 'svg',
                 { height: '30', width: '200' },
                 _react2.default.createElement(
                     'text',
                     { x: '0', y: '15', fill: 'red' },
-                    'Micbtn4'
+                    'Micbtn5'
                 )
             )
         )
