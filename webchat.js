@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "9755927f54320ec2dd21"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "7fb61c71d414c98d5810"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -56668,7 +56668,7 @@ var MicButton = function MicButton(_ref) {
                 onClick: micMessage,
                 disabled: !value
             },
-            _react2.default.createElement('img', { src: './svgs/robot_icon.PNG' }),
+            _react2.default.createElement('img', { src: 'MicButton/robot_icon.PNG' }),
             _react2.default.createElement(
                 'svg',
                 { height: '30', width: '200' },
