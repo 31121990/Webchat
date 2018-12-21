@@ -217,7 +217,7 @@ class Input extends Component {
           }}
           rows={1}
         />
-        <MicButton preferences={preferences} sendMessage={this.sendMessage} value="Mic" />
+        <MicButton value="Mic" />
 		
         <SendButton preferences={preferences} sendMessage={this.sendMessage} value={value} />
 
