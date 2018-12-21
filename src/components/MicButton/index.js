@@ -7,23 +7,8 @@ const SendButton = ({sendMessage, preferences, value}) => (
     <div
         className="RecastSendButtonContainer"
     >
-        <div
-            className="RecastSendButton"
-            onClick={sendMessage}
-            disabled={!value}
-        >
-            <svg
-                style={{
-                    width: 43                   
-                }}
-                viewBox="0 0 512 512"
-            >
-                  
-            </svg>
-			
-        </div>
-		
-    </div>
+	<div>
+	<img src="svgs/robot_icon.PNG" height="10px"/>
 )
 
 SendButton.propTypes = {
