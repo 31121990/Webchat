@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "54cdccaecb12f7131601"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "4ba514ed6aba4acde220"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -57309,7 +57309,7 @@ var SendButton = function SendButton(_ref) {
                 {
                     style: {
                         width: 43,
-                        fill: value ? preferences.accentColor : preferences.botMessageColor
+                        fill: value
                     },
                     viewBox: '0 0 512 512'
                 },
