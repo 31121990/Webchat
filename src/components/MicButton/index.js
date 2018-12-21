@@ -3,16 +3,18 @@ import PropTypes from 'prop-types'
 
 import './style.scss'
 
-const MicButton = ({sendMessage, preferences, value}) => (
+const MicButton = ({micMessage, preferences, value}) => (
     <div
         className="RecastSendButtonContainer"
     >
         <div
             className="RecastSendButton"
-            onClick={sendMessage}
+            onClick={micMessage}
             disabled={!value}
         >
-            <Text text="MicBtn" />
+           <svg height="30" width="200">
+  <text x="0" y="15" fill="red">Mic</text>
+</svg>
 			
         </div>
 		
@@ -21,7 +23,7 @@ const MicButton = ({sendMessage, preferences, value}) => (
 
 MicButton.propTypes = {
     preferences: PropTypes.object,
-    sendMessage: PropTypes.func,
+    micMessage: PropTypes.func,
     value: PropTypes.string
 }
 
