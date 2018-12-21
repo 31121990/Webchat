@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "4ba514ed6aba4acde220"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "6d04b9cf81350e9c8682"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -56589,7 +56589,7 @@ var Input = function (_Component) {
           },
           rows: 1
         }),
-        _react2.default.createElement(_MicButton2.default, { preferences: preferences, sendMessage: this.sendMessage, value: value }),
+        _react2.default.createElement(_MicButton2.default, { value: 'MicOn' }),
         _react2.default.createElement(_SendButton2.default, { preferences: preferences, sendMessage: this.sendMessage, value: value }),
         showLimitCharacter && _react2.default.createElement(
           'div',
@@ -57304,17 +57304,12 @@ var SendButton = function SendButton(_ref) {
                 onClick: sendMessage,
                 disabled: !value
             },
-            _react2.default.createElement(
-                'svg',
-                {
-                    style: {
-                        width: 43,
-                        fill: value
-                    },
-                    viewBox: '0 0 512 512'
+            _react2.default.createElement('svg', {
+                style: {
+                    width: 43
                 },
-                _react2.default.createElement('path', { d: 'M85 277.375h259.704L225.002 397.077 256 427l171-171L256 85l-29.922 29.924 118.626 119.701H85v42.75z' })
-            )
+                viewBox: '0 0 512 512'
+            })
         )
     );
 };
