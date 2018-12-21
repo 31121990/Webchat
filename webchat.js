@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "c7dd1ef047b3e461989d"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "c3f529367e8f00127eb1"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -57308,8 +57308,8 @@ var SendButton = function SendButton(_ref) {
                 'svg',
                 {
                     style: {
-                        width: 43,
-                        fill: value
+                        width: 23,
+                        fill: value ? preferences.accentColor : preferences.botMessageColor
                     },
                     viewBox: '0 0 512 512'
                 },
