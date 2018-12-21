@@ -3,19 +3,19 @@ import PropTypes from 'prop-types'
 
 import './style.scss'
 
-const MicButton = ({micMessage, preferences, value}) => (
+const MicButton = ({sendMessage, preferences, value}) => (
     <div
         className="RecastSendButtonContainer"
     >
         <div
             className="RecastSendButton"
-            onClick={micMessage}
+            onClick={sendMessage}
             disabled={!value}
         >
-		<img width="100" height="20" src="robot_icon.png"></img>
+		<img width="100" height="20" src="/Rushi/Webchat-master/Webchat-master/src/components/MicButton/robot_icon.png" ></img>
            <svg height="30" width="200">
 		   
-  <text x="0" y="15" fill="red">Micbtn4</text>
+  <text x="0" y="15" fill="red" >Micbtn5</text>
 </svg>
 			
         </div>
@@ -25,7 +25,7 @@ const MicButton = ({micMessage, preferences, value}) => (
 
 MicButton.propTypes = {
     preferences: PropTypes.object,
-    micMessage: PropTypes.func,
+    sendMessage: PropTypes.func,
     value: PropTypes.string
 }
 
