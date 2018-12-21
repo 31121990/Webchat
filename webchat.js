@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "452fa30e65b111f985a7"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "8596388661864cd0d620"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -56675,7 +56675,7 @@ var MicButton = function MicButton(_ref) {
                 _react2.default.createElement(
                     'text',
                     { x: '0', y: '15', fill: 'red' },
-                    'Micbtn2'
+                    'Micbtn3'
                 )
             )
         )
