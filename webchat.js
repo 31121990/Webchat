@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "a6d8a8580755b4c8339e"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "6ffd123415a1b8d6799e"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -56589,7 +56589,7 @@ var Input = function (_Component) {
           },
           rows: 1
         }),
-        _react2.default.createElement(_MicButton2.default, { value: 'Mic' }),
+        _react2.default.createElement(_MicButton2.default, { preferences: preferences, sendMessage: this.sendMessage, value: value }),
         _react2.default.createElement(_SendButton2.default, { preferences: preferences, sendMessage: this.sendMessage, value: value }),
         showLimitCharacter && _react2.default.createElement(
           'div',
@@ -57307,6 +57307,7 @@ var MicButton = function MicButton(_ref) {
             _react2.default.createElement(
                 'svg',
                 { height: '30', width: '200' },
+                _react2.default.createElement('img', { src: '../robot_icon.PNG' }),
                 _react2.default.createElement(
                     'text',
                     { x: '0', y: '15', fill: 'red' },
