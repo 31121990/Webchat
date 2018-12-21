@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "4cd4f8e6be2f2981a275"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "ee52a857b9bbb99f0d4d"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -57256,7 +57256,7 @@ if(true) {
 /* 897 */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed: SyntaxError: C:/Users/v.c.janarthanan/Desktop/Rushi/Webchat-master/Webchat-master/src/components/MicButton/index.js: Unexpected token, expected } (15:15)\n\n\u001b[0m \u001b[90m 13 | \u001b[39m\n \u001b[90m 14 | \u001b[39m\u001b[33mSendButton\u001b[39m\u001b[33m.\u001b[39mpropTypes \u001b[33m=\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 15 | \u001b[39m    preferences\u001b[33m:\u001b[39m \u001b[33mPropTypes\u001b[39m\u001b[33m.\u001b[39mobject\u001b[33m,\u001b[39m\n \u001b[90m    | \u001b[39m               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 16 | \u001b[39m    sendMessage\u001b[33m:\u001b[39m \u001b[33mPropTypes\u001b[39m\u001b[33m.\u001b[39mfunc\u001b[33m,\u001b[39m\n \u001b[90m 17 | \u001b[39m    value\u001b[33m:\u001b[39m \u001b[33mPropTypes\u001b[39m\u001b[33m.\u001b[39mstring\n \u001b[90m 18 | \u001b[39m}\u001b[0m\n");
+throw new Error("Module build failed: SyntaxError: C:/Users/v.c.janarthanan/Desktop/Rushi/Webchat-master/Webchat-master/src/components/MicButton/index.js: Unexpected token, expected } (18:15)\n\n\u001b[0m \u001b[90m 16 | \u001b[39m\n \u001b[90m 17 | \u001b[39m\u001b[33mSendButton\u001b[39m\u001b[33m.\u001b[39mpropTypes \u001b[33m=\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 18 | \u001b[39m    preferences\u001b[33m:\u001b[39m \u001b[33mPropTypes\u001b[39m\u001b[33m.\u001b[39mobject\u001b[33m,\u001b[39m\n \u001b[90m    | \u001b[39m               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 19 | \u001b[39m    sendMessage\u001b[33m:\u001b[39m \u001b[33mPropTypes\u001b[39m\u001b[33m.\u001b[39mfunc\u001b[33m,\u001b[39m\n \u001b[90m 20 | \u001b[39m    value\u001b[33m:\u001b[39m \u001b[33mPropTypes\u001b[39m\u001b[33m.\u001b[39mstring\n \u001b[90m 21 | \u001b[39m}\u001b[0m\n");
 
 /***/ })
 /******/ ]);
