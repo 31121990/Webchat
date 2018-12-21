@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import './style.scss'
 
-const SendButton = ({sendMessage, preferences, value}) => (
+const MicButton = ({sendMessage, preferences, value}) => (
     <div
         className="RecastSendButtonContainer"
     >
@@ -14,8 +14,8 @@ const SendButton = ({sendMessage, preferences, value}) => (
         >
             <svg
                 style={{
-                    width: 23,
-                    fill: value ? preferences.accentColor : preferences.botMessageColor,
+                    width: 43,
+                    fill: value,
                 }}
                 viewBox="0 0 512 512"
             >
@@ -27,10 +27,10 @@ const SendButton = ({sendMessage, preferences, value}) => (
     </div>
 )
 
-SendButton.propTypes = {
+MicButton.propTypes = {
     preferences: PropTypes.object,
     sendMessage: PropTypes.func,
     value: PropTypes.string
 }
 
-export default SendButton
+export default MicButton
