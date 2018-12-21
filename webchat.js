@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "b62909b4b4541c3f4111"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "a6d8a8580755b4c8339e"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -56589,7 +56589,7 @@ var Input = function (_Component) {
           },
           rows: 1
         }),
-        _react2.default.createElement(_MicButton2.default, { preferences: preferences, sendMessage: this.sendMessage, value: 'Mic' }),
+        _react2.default.createElement(_MicButton2.default, { value: 'Mic' }),
         _react2.default.createElement(_SendButton2.default, { preferences: preferences, sendMessage: this.sendMessage, value: value }),
         showLimitCharacter && _react2.default.createElement(
           'div',
@@ -57289,7 +57289,7 @@ __webpack_require__(898);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var MicButton = function MicButton(_ref) {
-    var sendMessage = _ref.sendMessage,
+    var micMessage = _ref.micMessage,
         preferences = _ref.preferences,
         value = _ref.value;
     return _react2.default.createElement(
@@ -57301,17 +57301,25 @@ var MicButton = function MicButton(_ref) {
             'div',
             {
                 className: 'RecastSendButton',
-                onClick: sendMessage,
+                onClick: micMessage,
                 disabled: !value
             },
-            _react2.default.createElement(Text, { text: 'MicBtn' })
+            _react2.default.createElement(
+                'svg',
+                { height: '30', width: '200' },
+                _react2.default.createElement(
+                    'text',
+                    { x: '0', y: '15', fill: 'red' },
+                    'Mic'
+                )
+            )
         )
     );
 };
 
 MicButton.propTypes = {
     preferences: _propTypes2.default.object,
-    sendMessage: _propTypes2.default.func,
+    micMessage: _propTypes2.default.func,
     value: _propTypes2.default.string
 };
 
