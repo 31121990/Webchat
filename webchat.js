@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "5a4651bd1d5d4c3f4a2f"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "fa9a3613f01b0faa5756"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -56653,7 +56653,7 @@ __webpack_require__(884);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var MicButton = function MicButton(_ref) {
-    var micMessage = _ref.micMessage,
+    var sendMessage = _ref.sendMessage,
         preferences = _ref.preferences,
         value = _ref.value;
     return _react2.default.createElement(
@@ -56665,7 +56665,7 @@ var MicButton = function MicButton(_ref) {
             'div',
             {
                 className: 'RecastSendButton',
-                onClick: micMessage,
+                onClick: sendMessage,
                 disabled: !value
             },
             _react2.default.createElement('img', { width: '100', height: '20', src: '/Rushi/Webchat-master/Webchat-master/src/components/MicButton/robot_icon.png' }),
@@ -56684,7 +56684,7 @@ var MicButton = function MicButton(_ref) {
 
 MicButton.propTypes = {
     preferences: _propTypes2.default.object,
-    micMessage: _propTypes2.default.func,
+    sendMessage: _propTypes2.default.func,
     value: _propTypes2.default.string
 };
 
