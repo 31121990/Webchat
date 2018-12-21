@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "c3f529367e8f00127eb1"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "ee80be3e07722367fc80"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -56589,7 +56589,7 @@ var Input = function (_Component) {
           },
           rows: 1
         }),
-        _react2.default.createElement(_MicButton2.default, { value: 'MicOn' }),
+        _react2.default.createElement(_MicButton2.default, { preferences: preferences, sendMessage: this.sendMessage, value: value }),
         _react2.default.createElement(_SendButton2.default, { preferences: preferences, sendMessage: this.sendMessage, value: value }),
         showLimitCharacter && _react2.default.createElement(
           'div',
