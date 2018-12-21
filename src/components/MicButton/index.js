@@ -7,8 +7,11 @@ const SendButton = ({sendMessage, preferences, value}) => (
     <div
         className="RecastSendButtonContainer"
     >
+	<div onClick={sendMessage}>
+	<img src="./svgs/robot_icon.PNG" height="10px"/>
+	</div>
 	<div>
-	<img src="svgs/robot_icon.PNG" height="10px"/>
+	
 )
 
 SendButton.propTypes = {
