@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "ee80be3e07722367fc80"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "cd6012faadd4dafc7032"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -57288,7 +57288,7 @@ __webpack_require__(898);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var SendButton = function SendButton(_ref) {
+var MicButton = function MicButton(_ref) {
     var sendMessage = _ref.sendMessage,
         preferences = _ref.preferences,
         value = _ref.value;
@@ -57308,8 +57308,8 @@ var SendButton = function SendButton(_ref) {
                 'svg',
                 {
                     style: {
-                        width: 23,
-                        fill: value ? preferences.accentColor : preferences.botMessageColor
+                        width: 43,
+                        fill: value
                     },
                     viewBox: '0 0 512 512'
                 },
@@ -57319,13 +57319,13 @@ var SendButton = function SendButton(_ref) {
     );
 };
 
-SendButton.propTypes = {
+MicButton.propTypes = {
     preferences: _propTypes2.default.object,
     sendMessage: _propTypes2.default.func,
     value: _propTypes2.default.string
 };
 
-exports.default = SendButton;
+exports.default = MicButton;
 
 /***/ }),
 /* 898 */
