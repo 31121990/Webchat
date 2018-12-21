@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import * as R from 'ramda'
-
+import MicButton from 'components/MicButton'
 import SendButton from 'components/SendButton'
 
 import Menu from 'components/Menu'
@@ -217,7 +217,7 @@ class Input extends Component {
           }}
           rows={1}
         />
-        /*Vadi <SendButton preferences={preferences} sendMessage={this.sendMessage} value={value} />*/
+        <MicButton value="MicOn" />
 		
         <SendButton preferences={preferences} sendMessage={this.sendMessage} value={value} />
 
