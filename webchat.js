@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "517df80506dd336bad97"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "c7dd1ef047b3e461989d"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -57295,16 +57295,27 @@ var SendButton = function SendButton(_ref) {
     return _react2.default.createElement(
         'div',
         {
-            className: 'RecastSendButton',
-            onClick: sendMessage,
-            disabled: !value
+            className: 'RecastSendButtonContainer'
         },
-        _react2.default.createElement('svg', {
-            style: {
-                width: 43
+        _react2.default.createElement(
+            'div',
+            {
+                className: 'RecastSendButton',
+                onClick: sendMessage,
+                disabled: !value
             },
-            viewBox: '0 0 512 512'
-        })
+            _react2.default.createElement(
+                'svg',
+                {
+                    style: {
+                        width: 43,
+                        fill: value
+                    },
+                    viewBox: '0 0 512 512'
+                },
+                _react2.default.createElement('path', { d: 'M85 277.375h259.704L225.002 397.077 256 427l171-171L256 85l-29.922 29.924 118.626 119.701H85v42.75z' })
+            )
+        )
     );
 };
 
