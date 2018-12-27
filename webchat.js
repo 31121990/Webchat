@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "e9d001e9c0bbc61a1613"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "b82bdb56538efbe7ad90"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -56608,8 +56608,8 @@ var Input = function (_Component) {
             width: 75,
             textAlign: 'right'
           },
-          alt: 'arrowRight',
-          src: '/assets/mic-pink.gif',
+          alt: 'Mic',
+          src: 'assets/mic-pink.gif',
           height: '100'
         }),
         _react2.default.createElement(_SendButton2.default, { preferences: preferences, sendMessage: this.sendMessage, value: value }),
