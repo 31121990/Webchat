@@ -222,8 +222,8 @@ class Input extends Component {
                     width: 75,
                     textAlign: 'right',
                 }}
-                alt="arrowRight"
-                src="/assets/mic-pink.gif"
+                alt="Mic"
+                src="assets/mic-pink.gif"
                 height="100"
             />
 		
