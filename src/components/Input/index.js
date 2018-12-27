@@ -217,7 +217,15 @@ class Input extends Component {
           }}
           rows={1}
         />
-        <MicButton value="Mic" />
+        <img      key="image"
+                style={{
+                    width: 75,
+                    textAlign: 'right',
+                }}
+                alt="arrowRight"
+                src="/assets/mic-pink.gif"
+                height="100"
+            />
 		
         <SendButton preferences={preferences} sendMessage={this.sendMessage} value={value} />
 
