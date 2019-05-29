@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "92898107a369371e90a2"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "c227ad94de699c82f6ec"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -57107,6 +57107,11 @@ var Input = function (_Component) {
           height: '100'
         }),
         _react2.default.createElement(_SendButton2.default, { preferences: preferences, sendMessage: this.sendMessage, value: value }),
+        _react2.default.createElement(
+          Button,
+          { href: '#' },
+          'Link'
+        ),
         showLimitCharacter && _react2.default.createElement(
           'div',
           { className: 'characterLimit' },
