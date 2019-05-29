@@ -228,6 +228,7 @@ class Input extends Component {
             />
 		
         <SendButton preferences={preferences} sendMessage={this.sendMessage} value={value} />
+		<Button href="#">Link</Button>
 
         {showLimitCharacter && (
           <div className="characterLimit">{characterLimit - value.length}</div>
