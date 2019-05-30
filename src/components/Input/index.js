@@ -217,7 +217,6 @@ class Input extends Component {
           }}
           rows={1}
         />
-		<img src={require('assets/mic.png')} />
         <img      key="image"
                 style={{
                     width: 75,
