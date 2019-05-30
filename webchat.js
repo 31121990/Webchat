@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "a354fce4efc352eb58d7"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "f293a9238caf288795fa"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -57097,7 +57097,6 @@ var Input = function (_Component) {
           },
           rows: 1
         }),
-        _react2.default.createElement('img', { alt: 'smallmic', src: __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"/assets/mic.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }())) }),
         _react2.default.createElement('img', { key: 'image',
           style: {
             width: 75,
