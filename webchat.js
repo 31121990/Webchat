@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "3987e2cd1a32fe793c3f"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "55deda981dd05d611b81"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -57097,7 +57097,6 @@ var Input = function (_Component) {
           },
           rows: 1
         }),
-        _react2.default.createElement('img', { src: __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"assets/mic.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }())) }),
         _react2.default.createElement('img', { key: 'image',
           style: {
             width: 75,
