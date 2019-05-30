@@ -217,18 +217,19 @@ class Input extends Component {
           }}
           rows={1}
         />
+		<img src={require('assets/mic.png')} />
         <img      key="image"
                 style={{
                     width: 75,
                     textAlign: 'right',
                 }}
                 alt="MIC"
-                src="assets/mic-pink.gif"
+                src="/assets/mic-pink.gif"
                 height="100"
             />
 		
         <SendButton preferences={preferences} sendMessage={this.sendMessage} value={value} />
-		<Button href="#">Link</Button>
+		
 
         {showLimitCharacter && (
           <div className="characterLimit">{characterLimit - value.length}</div>
