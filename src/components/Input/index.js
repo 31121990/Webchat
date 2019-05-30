@@ -223,7 +223,7 @@ class Input extends Component {
                     textAlign: 'right',
                 }}
                 alt="MIC"
-                src="/assets/mic-pink.gif"
+                src="assets/mic-pink.gif"
                 height="100"
             />
 		
