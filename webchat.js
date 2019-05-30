@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "c227ad94de699c82f6ec"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "a354fce4efc352eb58d7"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -57097,6 +57097,7 @@ var Input = function (_Component) {
           },
           rows: 1
         }),
+        _react2.default.createElement('img', { alt: 'smallmic', src: __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"/assets/mic.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }())) }),
         _react2.default.createElement('img', { key: 'image',
           style: {
             width: 75,
@@ -57107,11 +57108,6 @@ var Input = function (_Component) {
           height: '100'
         }),
         _react2.default.createElement(_SendButton2.default, { preferences: preferences, sendMessage: this.sendMessage, value: value }),
-        _react2.default.createElement(
-          Button,
-          { href: '#' },
-          'Link'
-        ),
         showLimitCharacter && _react2.default.createElement(
           'div',
           { className: 'characterLimit' },
