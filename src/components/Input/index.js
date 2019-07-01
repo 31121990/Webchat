@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import * as R from 'ramda'
-import MicButton from 'components/MicButton'
+
 import SendButton from 'components/SendButton'
 
 import Menu from 'components/Menu'
@@ -217,19 +217,13 @@ class Input extends Component {
           }}
           rows={1}
         />
-        <img      key="image"
-                style={{
-                    width: 75,
-                    textAlign: 'right',
-                }}
-                alt="MIC test"
-                src="assets/mic-pink.gif"
-                height="100"
-            />
-		
-        <SendButton preferences={preferences} sendMessage={this.sendMessage} value={value} />
-		
-
+        
+        <SendButton
+          preferences={preferences}
+          sendMessage={this.sendMessage}
+          value={value}
+        />
+        
         {showLimitCharacter && (
           <div className="characterLimit">{characterLimit - value.length}</div>
         )}
